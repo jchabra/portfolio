@@ -1,0 +1,796 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=EB+Garamond);
+@font-face {
+  font-family: 'proxima_novalight_italic';
+  src: url("../fonts/proxima_nova_light_it-webfont.eot");
+  src: url("../fonts/proxima_nova_light_it-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima_nova_light_it-webfont.woff") format("woff"), url("../fonts/proxima_nova_light_it-webfont.ttf") format("truetype"), url("../fonts/proxima_nova_light_it-webfont.svg#proxima_novalight_italic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima_novalight';
+  src: url("../fonts/proxima_nova_light-webfont.eot");
+  src: url("../fonts/proxima_nova_light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima_nova_light-webfont.woff") format("woff"), url("../fonts/proxima_nova_light-webfont.ttf") format("truetype"), url("../fonts/proxima_nova_light-webfont.svg#proxima_novalight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima_novaregular_italic';
+  src: url("../fonts/proxima_nova_reg_it-webfont.eot");
+  src: url("../fonts/proxima_nova_reg_it-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima_nova_reg_it-webfont.woff") format("woff"), url("../fonts/proxima_nova_reg_it-webfont.ttf") format("truetype"), url("../fonts/proxima_nova_reg_it-webfont.svg#proxima_novaregular_italic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima_nova_rgregular';
+  src: url("../fonts/proxima_nova_reg-webfont.eot");
+  src: url("../fonts/proxima_nova_reg-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima_nova_reg-webfont.woff") format("woff"), url("../fonts/proxima_nova_reg-webfont.ttf") format("truetype"), url("../fonts/proxima_nova_reg-webfont.svg#proxima_nova_rgregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima_novasemibold_italic';
+  src: url("../fonts/proxima_nova_sbold_it-webfont.eot");
+  src: url("../fonts/proxima_nova_sbold_it-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima_nova_sbold_it-webfont.woff") format("woff"), url("../fonts/proxima_nova_sbold_it-webfont.ttf") format("truetype"), url("../fonts/proxima_nova_sbold_it-webfont.svg#proxima_novasemibold_italic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima_novasemibold';
+  src: url("../fonts/proxima_nova_sbold-webfont.eot");
+  src: url("../fonts/proxima_nova_sbold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima_nova_sbold-webfont.woff") format("woff"), url("../fonts/proxima_nova_sbold-webfont.ttf") format("truetype"), url("../fonts/proxima_nova_sbold-webfont.svg#proxima_novasemibold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 41, ../sass/style.scss */
+* {
+  -moz-box-sizing: border-box;
+  /* Firexfox */
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box;
+  /* IE */
+}
+
+/* line 48, ../sass/style.scss */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+/* line 57, ../sass/style.scss */
+.clear {
+  clear: both;
+}
+
+/* line 61, ../sass/style.scss */
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px;
+  /* note the padding around a right floated image */
+}
+
+/* line 66, ../sass/style.scss */
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0;
+  /* note the padding around a left floated image */
+}
+
+/* line 74, ../sass/style.scss */
+body, h1, h2, h3, h4 {
+  font-family: 'proxima_nova_rgregular', sans-serif;
+}
+
+/* line 78, ../sass/style.scss */
+body {
+  font-size: 100%;
+  width: 100%;
+  line-height: 1.4;
+}
+
+/* line 84, ../sass/style.scss */
+a {
+  text-decoration: none;
+  color: #7a5b7b;
+}
+
+/* line 89, ../sass/style.scss */
+h2 {
+  font-weight: 400;
+  margin: 0;
+}
+
+/* line 94, ../sass/style.scss */
+section {
+  padding: 20px 0 25px 0;
+}
+
+/* line 99, ../sass/style.scss */
+#header {
+  background-color: #404040;
+}
+/* line 101, ../sass/style.scss */
+#header .container {
+  margin: 0 auto 5px auto;
+}
+/* line 104, ../sass/style.scss */
+#header .container div.logo img {
+  display: block;
+  margin: 100px auto;
+  width: 50%;
+}
+
+/* line 113, ../sass/style.scss */
+nav {
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  background-color: #a0cfc8;
+}
+/* line 119, ../sass/style.scss */
+nav ul.nav_links {
+  padding: 0px;
+  margin: 0px;
+}
+/* line 122, ../sass/style.scss */
+nav ul.nav_links li {
+  float: left;
+  font-size: 30px;
+  letter-spacing: 3px;
+}
+/* line 127, ../sass/style.scss */
+nav ul.nav_links li.first {
+  text-align: right;
+}
+/* line 130, ../sass/style.scss */
+nav ul.nav_links li.last {
+  text-align: left;
+}
+/* line 133, ../sass/style.scss */
+nav ul.nav_links li a {
+  color: #404040;
+}
+/* line 135, ../sass/style.scss */
+nav ul.nav_links li a:hover {
+  color: #7a5b7b;
+}
+
+/* line 144, ../sass/style.scss */
+div.white_border {
+  height: 5px;
+  width: 100%;
+  background-color: white;
+}
+
+/* line 150, ../sass/style.scss */
+#portfolio {
+  background-color: #f6f6f6;
+}
+
+/* line 154, ../sass/style.scss */
+p#heading {
+  margin: 0px;
+  color: #404040;
+  font-size: 25px;
+}
+
+/* line 160, ../sass/style.scss */
+section.portfolio {
+  min-height: 650px;
+}
+
+/* line 164, ../sass/style.scss */
+section.about {
+  background: url(../images/flower.png) no-repeat #e3f1ef;
+  background-position: 95% 65px;
+  color: #404040;
+}
+/* line 168, ../sass/style.scss */
+section.about h2 {
+  color: #7a5b7b;
+  margin-bottom: 15px;
+}
+/* line 172, ../sass/style.scss */
+section.about a:hover {
+  text-decoration: underline;
+}
+
+/* line 177, ../sass/style.scss */
+section.contact {
+  background-color: #404040;
+}
+/* line 179, ../sass/style.scss */
+section.contact h2 {
+  display: inline-block;
+  color: #a0cfc8;
+}
+/* line 182, ../sass/style.scss */
+section.contact h2:hover {
+  color: #7a5b7b;
+}
+/* line 186, ../sass/style.scss */
+section.contact .contact_links {
+  display: inline-block;
+}
+/* line 188, ../sass/style.scss */
+section.contact .contact_links a {
+  display: inline-block;
+  float: right;
+}
+/* line 191, ../sass/style.scss */
+section.contact .contact_links a.linkedin {
+  background: url("../images/linkedin_icon.png") no-repeat;
+  background-position: 0px -39px;
+  background-size: 40px;
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+/* line 199, ../sass/style.scss */
+section.contact .contact_links a.linkedin:hover {
+  background-position: 0px 0px;
+}
+/* line 203, ../sass/style.scss */
+section.contact .contact_links a.github {
+  background: url("../images/github_icon.png") no-repeat;
+  background-position: 0px -39px;
+  background-size: 40px;
+  width: 40px;
+  height: 39px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+/* line 210, ../sass/style.scss */
+section.contact .contact_links a.github:hover {
+  background-position: 0px 0px;
+}
+
+/* line 219, ../sass/style.scss */
+footer {
+  background-color: #404040;
+  color: white;
+  height: 100%;
+}
+/* line 223, ../sass/style.scss */
+footer p.text {
+  text-align: center;
+}
+
+/* line 230, ../sass/style.scss */
+.grid {
+  position: relative;
+  margin: 0 auto;
+  padding-top: 1em;
+  max-width: 1000px;
+  list-style: none;
+  text-align: center;
+}
+/* line 237, ../sass/style.scss */
+.grid figure {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  background: #000;
+  text-align: center;
+  cursor: pointer;
+}
+/* line 244, ../sass/style.scss */
+.grid figure img {
+  position: relative;
+  display: block;
+  max-width: 100%;
+}
+/* line 249, ../sass/style.scss */
+.grid figure figcaption {
+  padding: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+/* line 257, ../sass/style.scss */
+.grid figure h2 {
+  word-spacing: -0.15em;
+  font-weight: 300;
+  margin: 0;
+}
+/* line 262, ../sass/style.scss */
+.grid figure p {
+  margin: 0;
+  letter-spacing: 1px;
+  font-size: 68.5%;
+}
+/* line 267, ../sass/style.scss */
+.grid figure.image-effect {
+  padding: 0;
+  margin-bottom: 20px;
+}
+/* line 271, ../sass/style.scss */
+.grid figure.image-effect:hover img.port_img {
+  opacity: 0.4;
+}
+/* line 275, ../sass/style.scss */
+.grid figure.image-effect figcaption {
+  top: auto;
+  bottom: 0;
+  padding: 7px;
+  height: 3.75em;
+  background: #fff;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+}
+/* line 285, ../sass/style.scss */
+.grid figure.image-effect figcaption .title {
+  width: 250px;
+  float: left;
+  margin-left: 10px;
+}
+/* line 289, ../sass/style.scss */
+.grid figure.image-effect figcaption .title p.web_tech {
+  text-transform: lowercase;
+  color: #404040;
+  float: left;
+  letter-spacing: 0;
+  font-size: 12px;
+  text-align: left;
+}
+/* line 299, ../sass/style.scss */
+.grid figure.image-effect h2 {
+  float: left;
+  display: inline-block;
+  font-size: 20px;
+}
+/* line 303, ../sass/style.scss */
+.grid figure.image-effect h2 a {
+  color: #7a5b7b;
+}
+/* line 305, ../sass/style.scss */
+.grid figure.image-effect h2 a:hover {
+  color: #a0cfc8;
+}
+/* line 311, ../sass/style.scss */
+.grid figure.image-effect p.icon-links {
+  margin-right: 10px;
+}
+/* line 313, ../sass/style.scss */
+.grid figure.image-effect p.icon-links a {
+  float: right;
+  color: #3c4a50;
+  font-size: 1.4em;
+  margin-top: 15px;
+  margin-right: 20px;
+}
+/* line 319, ../sass/style.scss */
+.grid figure.image-effect p.icon-links a.link {
+  background: url("../images/link_icon.png") no-repeat;
+  background-position: 0px 1px;
+  background-size: 35px;
+  width: 40px;
+  height: 35px;
+  margin: 10px auto;
+  display: block;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+/* line 328, ../sass/style.scss */
+.grid figure.image-effect p.icon-links a.link:hover {
+  background-position: 0px -33px;
+}
+/* line 332, ../sass/style.scss */
+.grid figure.image-effect p.icon-links a.github {
+  background: url("../images/github_icon.png") no-repeat;
+  background-position: 0px 0px;
+  background-size: 40px;
+  width: 40px;
+  height: 39px;
+  margin: 10px auto;
+  display: block;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+/* line 341, ../sass/style.scss */
+.grid figure.image-effect p.icon-links a.github:hover {
+  background-position: 0px -39px;
+}
+/* line 347, ../sass/style.scss */
+.grid figure.image-effect p.description {
+  position: absolute;
+  bottom: 6em;
+  padding: 15px;
+  color: #fff;
+  text-transform: none;
+  font-size: 75%;
+  font-weight: 300;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s;
+  -webkit-backface-visibility: hidden;
+}
+
+/* line 366, ../sass/style.scss */
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+  pointer-events: none;
+}
+
+/* line 371, ../sass/style.scss */
+.grid figure figcaption,
+.grid figure figcaption > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 379, ../sass/style.scss */
+.grid figure figcaption > a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+}
+
+/* line 390, ../sass/style.scss */
+figure.image-effect figcaption div.title p,
+figure.image-effect h2,
+figure.image-effect p.icon-links a {
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(0, 200%, 0);
+  transform: translate3d(0, 200%, 0);
+}
+
+/* line 397, ../sass/style.scss */
+figure.image-effect:hover p.description {
+  opacity: 1;
+}
+
+/* line 404, ../sass/style.scss */
+figure.image-effect:hover figcaption,
+figure.image-effect:hover figcaption div.title p,
+figure.image-effect:hover h2,
+figure.image-effect:hover p.icon-links a {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 409, ../sass/style.scss */
+figure.image-effect:hover h2 {
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+}
+
+/* line 414, ../sass/style.scss */
+figure.image-effect:hover p.icon-links a:nth-child(3) {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+/* line 419, ../sass/style.scss */
+figure.image-effect:hover p.icon-links a:nth-child(2) {
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+}
+
+/* line 424, ../sass/style.scss */
+figure.image-effect:hover p.icon-links a:first-child {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+/* line 430, ../sass/style.scss */
+#returntotop {
+  z-index: 9997;
+  position: fixed;
+  bottom: 40%;
+  right: 3.5%;
+  display: none;
+}
+/* line 436, ../sass/style.scss */
+#returntotop p {
+  display: block;
+  color: #7a5b7b;
+  font-size: 24px;
+  cursor: default;
+  line-height: 0;
+}
+/* line 444, ../sass/style.scss */
+#returntotop:hover p {
+  color: white;
+}
+
+/* line 450, ../sass/style.scss */
+.homebutton {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  word-spacing: 1px;
+  background-color: none;
+  color: #7a5b7b;
+  line-height: 42px;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #7a5b7b;
+  display: block;
+  text-align: center;
+}
+/* line 465, ../sass/style.scss */
+.homebutton:hover {
+  background-color: #7a5b7b;
+  color: white;
+}
+
+/* line 471, ../sass/style.scss */
+.heart {
+  color: #a0cfc8;
+}
+
+/* line 475, ../sass/style.scss */
+.text {
+  font-size: 12px;
+  line-height: 1.6;
+  font-family: 'proxima_nova_rgregular', sans-serif;
+}
+
+/* line 481, ../sass/style.scss */
+#about_bullet {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* line 484, ../sass/style.scss */
+#about_bullet p {
+  font-size: 14px;
+  line-height: 1.6;
+  font-family: 'proxima_nova_rgregular', sans-serif;
+}
+/* line 490, ../sass/style.scss */
+#about_bullet span {
+  font-size: 20px;
+  color: #7a5b7b;
+  margin: 0 5px 0 0;
+}
+
+@media screen and (max-width: 1199px) {
+  /* line 502, ../sass/style.scss */
+  #header .container nav {
+    background-position: 5% -45px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  /* line 510, ../sass/style.scss */
+  section.portfolio {
+    min-height: 685px;
+  }
+}
+@media screen and (max-width: 970px) {
+  /* line 516, ../sass/style.scss */
+  section.portfolio {
+    min-height: 675px;
+  }
+}
+@media screen and (max-width: 920px) {
+  /* line 522, ../sass/style.scss */
+  .grid figure.image-effect p.description {
+    font-size: 70%;
+  }
+
+  /* line 525, ../sass/style.scss */
+  section.portfolio {
+    min-height: 655px;
+  }
+}
+@media screen and (max-width: 880px) {
+  /* line 531, ../sass/style.scss */
+  .grid figure.image-effect p.description {
+    font-size: 58%;
+  }
+}
+@media screen and (max-width: 880px) {
+  /* line 537, ../sass/style.scss */
+  .grid figure.image-effect p.description {
+    font-size: 95%;
+    bottom: 10em;
+  }
+}
+@media screen and (max-width: 820px) {
+  /* line 544, ../sass/style.scss */
+  section.portfolio {
+    min-height: 600px;
+  }
+}
+@media screen and (max-width: 806px) {
+  /* line 550, ../sass/style.scss */
+  .grid figure.image-effect p.description {
+    font-size: 85%;
+    bottom: 9em;
+  }
+}
+@media screen and (max-width: 769px) {
+  /* line 557, ../sass/style.scss */
+  .grid figure.image-effect p.description {
+    font-size: 75%;
+    bottom: 8em;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 568, ../sass/style.scss */
+  #header .container div.logo img {
+    width: 75%;
+  }
+
+  /* line 578, ../sass/style.scss */
+  #contact section.contact form .submit_button {
+    margin-top: 22px;
+  }
+}
+@media screen and (max-width: 758px) {
+  /* line 588, ../sass/style.scss */
+  .grid figure.image-effect figcaption .title {
+    width: 240px;
+  }
+}
+@media screen and (max-width: 740px) {
+  /* line 594, ../sass/style.scss */
+  .grid figure.image-effect figcaption .title {
+    width: 190px;
+  }
+
+  /* line 597, ../sass/style.scss */
+  .grid figure.image-effect h2 {
+    font-size: 18px;
+  }
+
+  /* line 600, ../sass/style.scss */
+  .grid figure.image-effect figcaption .title p.web_tech {
+    font-size: 11px;
+  }
+
+  /* line 603, ../sass/style.scss */
+  section.portfolio {
+    min-height: 550px;
+  }
+}
+@media screen and (max-width: 733px) {
+  /* line 610, ../sass/style.scss */
+  ul.nav_links li {
+    font-size: 22px;
+    font-weight: 100;
+  }
+}
+@media screen and (max-width: 700px) {
+  /* line 618, ../sass/style.scss */
+  section.portfolio {
+    min-height: 500px;
+  }
+}
+@media screen and (max-width: 666px) {
+  /* line 625, ../sass/style.scss */
+  ul.nav_links li {
+    font-size: 22px;
+    font-weight: 100;
+  }
+
+  /* line 630, ../sass/style.scss */
+  .grid figure.image-effect p.description {
+    font-size: 75%;
+    bottom: 7.5em;
+  }
+}
+@media screen and (max-width: 599px) {
+  /* line 637, ../sass/style.scss */
+  .grid figure.image-effect p.description {
+    font-size: 67%;
+    bottom: 7.5em;
+  }
+}
+@media screen and (max-width: 530px) {
+  /* line 644, ../sass/style.scss */
+  .grid figure.image-effect p.description {
+    font-size: 60%;
+    bottom: 7.5em;
+  }
+}
+@media screen and (max-width: 460px) {
+  /* line 655, ../sass/style.scss */
+  #header .container nav ul.nav_links li {
+    font-size: 18px;
+  }
+
+  /* line 662, ../sass/style.scss */
+  .grid figure.image-effect p.description {
+    font-size: 50%;
+    bottom: 7em;
+  }
+}
+@media screen and (max-width: 390px) {
+  /* line 673, ../sass/style.scss */
+  #header .container nav ul.nav_links li {
+    font-size: 15px;
+  }
+
+  /* line 680, ../sass/style.scss */
+  .grid figure.image-effect figcaption .title {
+    width: 170px;
+  }
+
+  /* line 683, ../sass/style.scss */
+  .grid figure.image-effect h2 {
+    font-size: 14px;
+  }
+
+  /* line 686, ../sass/style.scss */
+  .grid figure.image-effect figcaption .title p.web_tech {
+    font-size: 9px;
+  }
+
+  /* line 689, ../sass/style.scss */
+  .grid figure.image-effect p.description {
+    font-size: 43%;
+    bottom: 7em;
+  }
+
+  /* line 693, ../sass/style.scss */
+  .grid figure.image-effect p.icon-links a.github {
+    background-size: 35px;
+    width: 35px;
+    height: 34px;
+  }
+
+  /* line 698, ../sass/style.scss */
+  .grid figure.image-effect p.icon-links a.link {
+    background-size: 30px;
+    width: 30px;
+    height: 30px;
+  }
+
+  /* line 703, ../sass/style.scss */
+  .grid figure.image-effect figcaption {
+    height: 2.75em;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 714, ../sass/style.scss */
+  #contact section.contact form .submit_button {
+    margin-top: 10px;
+  }
+
+  /* line 721, ../sass/style.scss */
+  footer .footer_links, footer p.text {
+    text-align: center;
+  }
+  /* line 724, ../sass/style.scss */
+  footer p.text {
+    padding-top: 0px;
+  }
+}
+@media screen and (max-width: 550px) {
+  /* line 733, ../sass/style.scss */
+  nav ul.nav_links li {
+    font-size: 22px;
+  }
+}
