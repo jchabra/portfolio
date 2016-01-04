@@ -28,6 +28,7 @@
 $green: #a0cfc8;
 $white: #fff;
 $beige: #f6f6f6;
+$light-gray: #E6E6E6;
 $yellow: #e2ddc2;
 $gray: #404040;
 $light-green: #E3F1EF;
@@ -110,7 +111,7 @@ section {
   }
 } //#header
 
-nav {
+nav, #header2 {
   margin: auto;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -122,7 +123,6 @@ nav {
     li {
       float: left;
       font-size: 30px;
-      
       letter-spacing: 3px;
       &.first {
         text-align: right;
@@ -148,7 +148,7 @@ div.white_border {
 }
 
 #portfolio {
-  background-color: $beige;
+  background-color: $light-gray;
 }
 
 p#heading {
@@ -159,6 +159,28 @@ p#heading {
 
 section.portfolio {
   min-height: 650px;
+  h2 {
+    color: $purple;
+    margin-bottom: 15px;
+    text-align: left;
+    padding-left: 0px;
+  }
+  h3 {
+    padding-left: 0;
+    text-align: left;
+  }
+  h6 {
+    padding-left: 0;
+    text-align: left;
+    margin-top: 0px;
+  }
+  img.tech-startup-img {
+    border: 5px solid $white;
+    margin-bottom: 30px;
+  }
+  .top {
+    margin-bottom: 20px;
+  }
 }
 
 section.about {
@@ -168,6 +190,9 @@ section.about {
   h2 {
     color: $purple;
     margin-bottom: 15px;
+  }
+  h4 {
+    margin-bottom: 5px;
   }
   a:hover {
     text-decoration: underline;
@@ -480,12 +505,12 @@ figure.image-effect:hover p.icon-links a:first-child {
 
 #about_bullet {
   margin-top: 0;
-  margin-bottom: 0;
+  padding-bottom: 20px;
   p {
     font-size: 14px;
-    line-height: 1.6;
     font-family: 'proxima_nova_rgregular', sans-serif;
-
+    margin-bottom: 2px;
+    margin-top: 3px;
   }
   span {
     font-size: 20px;
