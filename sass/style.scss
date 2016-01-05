@@ -25,15 +25,16 @@
 }
 
 // **** Variables **** //
-$green: #a0cfc8;
+$green: #51a269;
 $white: #fff;
 $beige: #f6f6f6;
-$light-gray: #E6E6E6;
+$light-gray: #ECECEC;
 $yellow: #e2ddc2;
 $gray: #404040;
-$light-green: #E3F1EF;
-$purple: #7a5b7b;
+$light-green: #eff3ee;
+$purple: #9c4a95;
 $smoke: #837e84;
+$blue: #4849a4;
 
 
 // **** Setup **** //
@@ -98,14 +99,18 @@ section {
 
 // ****  HEADER & NAVIGATION ****//
 #header {
-  background-color: $gray;
+  background-color: $white;
   .container {
     margin: 0 auto 5px auto;
     div.logo {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      border-right: 2px solid $gray;
+      // border-right: 2px solid $gray;
       img {
         display: block;
         margin: 100px auto;
-        width: 50%;
+        width: 75%;
       }
     }
   }
@@ -116,39 +121,53 @@ nav, #header2 {
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
-  background-color: $green;
+  // background-color: $green;
   ul.nav_links {
     padding: 0px;
-    margin: 0px;
+    text-align: left;
+    margin-top: 90px;
+    margin-left: 80px;
     li {
-      float: left;
-      font-size: 30px;
+      font-size: 35px;
       letter-spacing: 3px;
-      &.first {
-        text-align: right;
-      }
-      &.last {
-        text-align: left;;
-      }
+      margin-bottom: 15px;
       a {
-        color: $gray;
+        color: $purple;
+        span.blue {
+          color: $blue;
+        }
         &:hover {
-          color: $purple;
+          color: $blue;
+          span.blue {
+            color: $purple;
+          }
         }
       }
     }
       } //ul.navlinks
-    }  
+    }
+
+    #header2 {
+      padding-top: 0px;
+      ul.nav_links{
+        margin-top: 30px;
+        margin-left: 0px;
+        li {
+          font-size: 25px;
+          text-align: center;
+        }
+      }
+    }
 
 // **** SECTIONS **** //
-div.white_border {
+div.gray_border {
   height: 5px;
   width: 100%;
-  background-color: $white;
+  background-color: $light-gray;
 }
 
 #portfolio {
-  background-color: $light-gray;
+  background: url(../images/background-pattern.png);
 }
 
 p#heading {
@@ -168,23 +187,24 @@ section.portfolio {
   h3 {
     padding-left: 0;
     text-align: left;
+    margin-top: 5px;
   }
   h6 {
     padding-left: 0;
     text-align: left;
-    margin-top: 0px;
+    margin-top: -15px;
+    margin-bottom: 15px;
   }
   img.tech-startup-img {
-    border: 5px solid $white;
     margin-bottom: 30px;
   }
-  .top {
-    margin-bottom: 20px;
+  div.top {
+    margin-top: 50px;
   }
 }
 
 section.about {
-  background:url(../images/flower.png) no-repeat $light-green;
+  background:url(../images/flower.png) no-repeat $light-gray;
   background-position: 95% 65px;
   color: $gray;
   h2 {
@@ -503,6 +523,10 @@ figure.image-effect:hover p.icon-links a:first-child {
   font-family: 'proxima_nova_rgregular', sans-serif;
 }
 
+.blue {
+  color: $blue !important;
+}
+
 #about_bullet {
   margin-top: 0;
   padding-bottom: 20px;
@@ -574,14 +598,14 @@ figure.image-effect:hover p.icon-links a:first-child {
 @media screen and (max-width: 806px) {
   .grid figure.image-effect p.description {
     font-size: 85%;
-    bottom: 9em;
+    bottom: 11em;
   }
 }
 
 @media screen and (max-width: 769px) {
   .grid figure.image-effect p.description {
-    font-size: 75%;
-    bottom: 8em; 
+    font-size: 85%;
+    bottom: 10em; 
   }
 }
 
@@ -678,7 +702,7 @@ figure.image-effect:hover p.icon-links a:first-child {
       nav {
         ul.nav_links {
           li {
-            font-size: 18px;
+            font-size: 30px;
           }
         }
       }
@@ -696,7 +720,7 @@ figure.image-effect:hover p.icon-links a:first-child {
       nav {
         ul.nav_links {
           li {
-            font-size: 15px;
+            font-size: 25px;
           }
         }
       }
@@ -733,6 +757,25 @@ figure.image-effect:hover p.icon-links a:first-child {
 // **** --------------- SMALL DEVICE MEDIA QUERIES ----------------- *****//
 
 @media screen and (max-width: 767px) {
+  #header {
+    .container {
+      div.logo {
+        border-right: 0px;
+        border-bottom: 5px solid $light-gray;
+        img {
+          margin: 50px auto;
+        }
+      }
+    }  
+  }
+
+
+
+  nav ul.nav_links, #header2 ul.nav_links {
+    margin: auto;
+    text-align: center;
+  }
+
   #contact {
     section.contact {
       form {
@@ -753,12 +796,6 @@ figure.image-effect:hover p.icon-links a:first-child {
 } // media query max-width 767px
 
 @media screen and (max-width: 550px) {
-  nav {
-    ul.nav_links {
-      li {
-        font-size: 22px;
-      }
-    }
-  }
+
 } // media query max-width 550px
 
