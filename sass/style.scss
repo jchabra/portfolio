@@ -1,7 +1,7 @@
 //*** Table of Contents //
 // 1) Fonts
-// 2) Mixins
-// 3) Variables
+// 2) Colors
+// 3) Mixins
 // 4) Media All Queries
 //    a) Setup
 //    b) Base Styles
@@ -16,6 +16,9 @@
 
 //  **** Fonts **** //
 @import 'fonts';
+
+//  **** Colors **** //
+@import 'colors';
 
 // **** Mixins **** //
 @mixin image-replacement {
@@ -35,27 +38,6 @@
 @mixin font-semiBold {
   font-family: 'proxima_novasemibold';
 }
-
-// **** Variables **** //
-$dark-blue: #03050d;
-$white-gray: #dfdede;
-$white: #fff;
-$light-gray: #ECECEC;
-$light-purple: #aa9c9b;
-$gray: #404040;
-$almost-white: #f3f3f3;
-$pink: #b26363;
-$green: #3b7758;
-$yellow: #aba121;
-
-
-$beige: #f6f6f6;
-
-$light-green: #eff3ee;
-$purple: #9c4a95;
-$smoke: #837e84;
-$blue: #4849a4;
-
 
 // **** Setup **** //
 
@@ -134,7 +116,18 @@ section {
         margin: 15% auto;
         width: 60%;
       }
-    }
+      .jobTagline { 
+        font-family: 'proxima_novalight'; 
+        color: white; 
+        text-align: center;
+        text-transform: uppercase; 
+        font-size: 25px; 
+        letter-spacing: 3px; 
+        display: block; 
+        margin-top: -250px; 
+        margin-left: 76px;
+      }
+    }//.logo
   }
 } //#header
 
@@ -151,7 +144,7 @@ nav, #header2 {
       a {
         display: block;
         color: $white-gray;
-        font-size: 18px;
+        font-size: 16px;
         @include font-light;
         letter-spacing: 2px;
         text-align: center;
@@ -263,7 +256,6 @@ section.portfolio {
 }
 
 section.about {
-  // background-color: #dee5e3;
   background-color: #e8f0ee;
   color: $dark-blue;
   h1 {
@@ -304,8 +296,7 @@ section.about {
         padding-left: 0px;
         .skillBox {
           text-align: center;
-          background-color: #6ca99b;
-          // background-color: #9aadb4;
+          background-color: $green;
           color: $almost-white;
           margin-bottom: 5px;
           padding: 5px 10px;
