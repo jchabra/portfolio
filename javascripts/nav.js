@@ -1,6 +1,6 @@
 $(function(){
 
-  $('nav a').click(scroll);
+  $('nav a.homePage').click(scroll);
 
   $(window).scroll(showReturn);
   $(window).resize(showReturn);
