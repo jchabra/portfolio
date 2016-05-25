@@ -256,7 +256,8 @@ section.portfolio {
 }
 
 section.about {
-  background-color: #e8f0ee;
+  // background-color: #e8f0ee;
+  background-color: rgba(232, 240, 238, 0.62);
   color: $dark-blue;
   h1 {
 
@@ -369,6 +370,10 @@ footer {
 .og-details a {
   color: $dark-blue;
   border: 2px solid $dark-blue;
+}
+
+.og-details p {
+    color: $gray;
 }
 
 // Old grid (used in personal pages)
@@ -614,7 +619,7 @@ figure.image-effect:hover p.icon-links a:first-child {
 }
 
 .heart {
-  color: $green;
+  color: $pink;
 }
 
 .text {
