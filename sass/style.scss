@@ -96,6 +96,10 @@ h2 {
   margin: 0;
 }
 
+b {
+  @include font-semiBold;
+}
+
 section {
   padding: 20px 0 25px 0;
 }
@@ -257,7 +261,8 @@ section.portfolio {
 
 section.about {
   // background-color: #e8f0ee;
-  background-color: rgba(232, 240, 238, 0.62);
+  // background-color: rgba(232, 240, 238, 0.62);
+  background-color: $white;
   color: $dark-blue;
   h1 {
 
@@ -275,6 +280,10 @@ section.about {
   }
   p {
     font-size: 18px;
+    @include font-light;
+    b {
+      @include font-semiBold;
+    }
   }
   #skills {
     .skillSection {
@@ -284,6 +293,7 @@ section.about {
         margin-bottom: 20px;
       }
       h5 {
+        @include font-light;
         font-size: 20px;
         margin: 10px auto;
         padding-top: 10px;
@@ -626,24 +636,4 @@ figure.image-effect:hover p.icon-links a:first-child {
   font-size: 12px;
   line-height: 1.6;
   font-family: 'proxima_nova_rgregular', sans-serif;
-}
-
-.blue {
-  color: $blue !important;
-}
-
-#about_bullet {
-  margin-top: 0;
-  padding-bottom: 20px;
-  p {
-    font-size: 18px;
-    font-family: 'proxima_nova_rgregular', sans-serif;
-    margin-bottom: 2px;
-    margin-top: 3px;
-  }
-  span {
-    font-size: 20px;
-    color: $pink;
-    margin: 0 5px 0 0;
-  }
 }

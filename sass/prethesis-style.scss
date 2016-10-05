@@ -1,0 +1,230 @@
+//*** Table of Contents //
+// 1) Fonts
+// 2) Colors
+// 3) Mixins
+// 4) Media All Queries
+//    a) Setup
+//    b) Base Styles
+//    c) Header & Navigation
+//    d) Footer
+//    e) Portfoliio Affects
+//     f) Other Layout Styles
+//    g) Contact Form
+// 5) Large Device Media Queries
+// 6) Small Device Media Queries
+
+
+//  **** Fonts **** //
+@import 'fonts';
+
+//  **** Colors **** //
+@import 'colors';
+
+// **** Mixins **** //
+@mixin image-replacement {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@mixin font-regular {
+  font-family: 'proxima_nova_rgregular';
+}
+
+@mixin font-light {
+  font-family: 'proxima_novalight';
+}
+
+@mixin font-semiBold {
+  font-family: 'proxima_novasemibold';
+}
+
+// **** Setup **** //
+
+// Box Model Hack 
+* {
+ -moz-box-sizing: border-box; /* Firexfox */
+ -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+ box-sizing: border-box; /* IE */
+}
+
+// Clear fix hack 
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right; 
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left; 
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+.underlineText {
+  text-decoration: underline;
+}
+
+b {
+  @include font-semiBold;
+}
+
+.topMargin {
+  margin-top: 30px;
+}
+
+// ================ Clean up later
+
+#header2.prethesisPage {
+  min-height: 800px;
+  h1 {
+    color: $white-gray;
+    @include font-light;
+    margin-left: 30px;
+    margin-top: 18px;
+  }
+  #process {
+    background: url(../prethesis/prethesis-images/process.png) no-repeat $dark-blue;
+    background-position: 0px 77px;
+    background-size: 100%;
+    min-height: 780px;
+    .prethesis-heading {
+      h1 {
+        margin: auto;
+        text-align: center;
+        font-size: 106px;
+        letter-spacing: 5px;
+        padding-top: 190px;
+      }
+      ul {
+        list-style: none;
+        li{
+          padding: 10px;
+          float: left;
+          a {
+            display: block;
+            color: $white-gray;
+            font-size: 20px;
+            @include font-light;
+            letter-spacing: 2px;
+            text-align: center;
+            text-transform: uppercase;
+          }
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}//#header2.prethesisPage
+
+section.process {
+  min-height: 1100px;
+  h1 {
+    font-size: 40px; 
+  }
+  h2 {
+    text-align: left;
+    margin-bottom: 15px;  
+    @include font-semiBold;
+  }
+  h3 {
+    @include font-semiBold;
+  }
+  h3.topics {
+    text-align: center;
+  }
+  h4 {
+    @include font-semiBold;
+  }
+  a {
+    color: $blue;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  img {
+    width: 50%;
+    display: block;
+    margin: auto;
+    &.mindmap {
+      width: 100%;
+    }
+  }
+  h3.investigationLink {
+    text-align: left;
+    margin-left: 40px;
+    a {
+      color: $dark-blue;  
+      text-decoration: underline;
+    }
+  }
+  .finalThree {
+    img {
+      margin-bottom: 20px;
+    }
+  }
+  a.presentationLink {
+    text-decoration: underline;
+  }
+  .gridofnine {
+    img {
+      margin: initial;
+    }
+  }
+  .sorting {
+    img {
+      margin-bottom: 30px;
+      border: 5px solid $white-gray;
+    }
+  }
+  ol.links {
+    a {
+      text-decoration: underline;
+      color: $blue;
+    }
+  }
+
+  h4.link {
+    a {
+      text-decoration: underline;
+      color: $blue;
+    }
+  }
+  table, td {
+    border: 1px solid $light-gray;
+  }
+  th, td {
+    padding: 10px;
+  }
+  th {
+    background-color: $light-gray;
+    border: 1px solid $white-gray;
+    @include font-semiBold;
+  }
+  .mini-prototypes {
+    img {
+      display: block;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+}//end of section.process
+
+
+
+
+
+
