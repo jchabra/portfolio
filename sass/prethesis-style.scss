@@ -86,6 +86,10 @@ b {
 
 // ================ Clean up later
 
+.allCaps {
+  text-transform: uppercase;
+}
+
 #header2.prethesisPage {
   min-height: 800px;
   h1 {
@@ -223,6 +227,9 @@ section.process {
   }
   div.needRoom {
     padding-bottom: 50px;
+  }
+  th.firstCA {
+    width: 120px;
   }
 }//end of section.process
 
