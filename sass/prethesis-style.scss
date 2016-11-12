@@ -84,6 +84,10 @@ b {
   margin-top: 30px;
 }
 
+.floatLeft {
+  float: left;
+}
+
 // ================ Clean up later
 
 .allCaps {
@@ -91,18 +95,25 @@ b {
 }
 
 #header2.prethesisPage {
-  min-height: 800px;
+  min-height: 780px;
+  .prethesis_nav {
+    background-color: $dark-blue;
+    height: 80px;
+  }
   h1 {
     color: $white-gray;
     @include font-light;
     margin-left: 30px;
     margin-top: 18px;
   }
+  ul.nav_links {
+    margin-top: 25px;
+  }
   #process {
-    background: url(../prethesis/prethesis-images/process.png) no-repeat $dark-blue;
-    background-position: 0px 77px;
+    background: url(../prethesis/prethesis-images/process_bkgd.png) no-repeat $dark-blue;
+    background-position: 5px -180px;
     background-size: 100%;
-    min-height: 780px;
+    min-height: 700px;
     .prethesis-heading {
       h1 {
         margin: auto;
@@ -236,6 +247,32 @@ section.process {
       width: 100%;
       display: block;
     }
+  }
+  .storyboard {
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+  .books {
+    img {
+      display: block;
+      width: 20%;
+      margin: inherit;
+    }
+  }
+  p.proto-description {
+
+  }
+  img.addBorder {
+    border: 5px solid $white-gray;
+  }
+  img.oneHundred {
+    width: 100%;
+  }
+  video.pov_video {
+    margin: auto;
+    display: block;
   }
 }//end of section.process
 
