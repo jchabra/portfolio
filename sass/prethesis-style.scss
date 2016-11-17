@@ -274,10 +274,18 @@ section.process {
     margin: auto;
     display: block;
   }
+  .stats {
+    img {
+      width: 75%;
+    }
+  }
+  .board_members {
+    h4 {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
 }//end of section.process
-
-
-
 
 
 
