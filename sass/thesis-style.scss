@@ -114,8 +114,8 @@ b {
     margin-top: 25px;
   }
   #process {
-    background: url(../thesis/thesis-images/process_bkgd.jpg) no-repeat $dark-blue;
-    background-position: 5px -180px;
+    background: url(../thesis/thesis-images/process_bkgd2.jpg) no-repeat $dark-blue;
+    background-position: 0px -180px;
     background-size: 100%;
     min-height: 700px;
     .thesis-heading {
@@ -286,6 +286,9 @@ section.process, section.aboutThesis {
   }
   img.seventy {
     width: 70%;
+  }
+  img.imageBorder {
+    border: 5px solid $white-gray;
   }
   .paddingZero {
     padding: 0;
