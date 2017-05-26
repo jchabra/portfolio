@@ -1,11 +1,11 @@
 // Web Development
-var webDev=new Array("HTML5", "CSS3", "SASS", "Responsive Design", "JavaScript", "jQuery", "AJAX", "JSON", "Ruby on Rails", "WCAG 2.0", "Foundation", "Bootstrap", "Unsemantic");
+var webDev=new Array("HTML5", "CSS3", "SASS", "Responsive Design", "JavaScript", "jQuery", "WCAG 2.0", "Foundation", "Bootstrap", "Unsemantic");
 
 for(var i=0; i<webDev.length; i++)
     $('#skills').find("div.webDevSkills").append('<div class="skillContainer grid-33 mobile-grid-50"><div class="skillBox">' + webDev[i] + '</div></div>');
 
 // Design
-var design=new Array("Axure", "Pop App", "InVision", "Sketch", "Photoshop", "Illustrator", "InDesign",  "Adobe XD", "Keynote");
+var design=new Array("Axure", "Sketch", "InVision", "Photoshop", "Illustrator", "InDesign",  "Adobe XD", "Keynote", "Unity 3D");
 
 for(var i=0; i<design.length; i++)
     $('#skills').find("div.designSkills").append('<div class="skillContainer grid-33 mobile-grid-50"><div class="skillBox">' + design[i] + '</div></div>');

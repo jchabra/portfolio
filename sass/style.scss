@@ -39,6 +39,14 @@
   font-family: 'proxima_novasemibold';
 }
 
+@mixin grayLine {
+  .grayLine {
+    @include image-replacement;
+    background: url(../images/grayLine.png) $dark-blue;
+    margin-top: 20px;
+  }
+}
+
 // **** Setup **** //
 
 // Box Model Hack 
@@ -104,6 +112,28 @@ section {
   padding: 20px 0 25px 0;
 }
 
+.pad-left-zero {
+  padding-left: 0;
+}
+
+.pad-right-zero {
+  padding-right: 0;
+}
+
+img.image100 {
+  width: 100%;
+}
+
+img.image90 {
+  width: 90%;
+}
+
+img.image80 {
+  width: 80%;
+  display: block;
+  margin: auto;
+}
+
 // ****  HEADER & NAVIGATION ****//
 #header {
   background: url(../images/bg-flower.png) no-repeat $dark-blue;
@@ -166,11 +196,7 @@ nav, #header2 {
 }
 
 #header, #header2 {
-  .grayLine {
-    @include image-replacement;
-    background: url(../images/grayLine.png) $dark-blue;
-    margin-top: 20px;
-  }
+  @include grayLine; 
 }
 
 #header2 {
@@ -184,6 +210,12 @@ nav, #header2 {
       text-align: center;
     }
   }
+}
+
+.blackLine {
+  @include image-replacement;
+  background: url(../images/blackLine.png);
+  margin-top: 25px;
 }
 
 // **** SECTIONS **** //
@@ -250,7 +282,68 @@ section {
       margin-top: 100px;  
     }
   }
-}
+  // Pickee Page
+  &.pickee-project {
+    background-color: $white;
+    table {
+      background-color: $white;
+      ul {
+        padding-left: 20px;
+      }
+    }
+    th, td {
+      border: 1px solid $light-gray;
+    }
+    th, td {
+      padding: 10px;
+    }
+    th {
+      background-color: $light-gray;
+      border: 1px solid $white-gray;
+      @include font-semiBold;
+    }
+    td.first-cell {
+      width: 150px;
+    }
+    td {
+      img {
+        display: block;
+        margin: auto;
+        &.appPreviewImage {
+          height: 400px;
+          width: auto;
+          margin-top: 8px;
+          margin-bottom: 8px;
+        }
+      }
+    }
+    .survey-results {
+      img {
+        margin-top: 16px;
+      }
+    }
+    .user-persona {
+      img {
+        border: 2px solid $almost-white;
+        margin-bottom: 15px;
+      }
+    }
+    .margintop16 {
+      margin-top: 16px;
+    }
+  }//.pickee-project
+  .mobile-ca {
+    background-color: $almost-white;
+    margin-top: 15px;
+    padding: 20px;
+    h3 {
+      margin-top: 0;
+    }
+    ul {
+      padding-left: 20px;
+    }
+  }
+}//#portfolio
 
 section.portfolio {
   min-height: 1100px;
@@ -384,7 +477,7 @@ footer {
 }
 
 .og-details p {
-    color: $gray;
+  color: $gray;
 }
 
 // Old grid (used in personal pages)
