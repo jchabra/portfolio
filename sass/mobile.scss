@@ -29,6 +29,9 @@
   nav ul.nav_links li a, #header2 ul.nav_links li a {
     font-size: 14px;
   }
+  .skillBox {
+    min-height: 388px !important;
+  }
 }
 
 @media screen and (max-width: 920px) {
@@ -77,8 +80,8 @@
     font-size: 16px;
     margin-top: -157px;  
   }
-  section.about #skills .skillSection .skillContainer .skillBox {
-    font-size: 9px;
+  .skillBox {
+    min-height: 290px !important;
   }
   footer p.text {
     font-size: 10px;
@@ -87,43 +90,43 @@
 
 @media screen and (max-width: 767px) {
 // ****  NAVIGATION  *****//
-  nav {
-    margin-top: 20px;  
+nav {
+  margin-top: 20px;  
+}
+nav ul.nav_links li a, #header2 ul.nav_links li a {
+  font-size: 20px;
+  text-align: center;
+}
+nav ul.nav_links li.second a{
+  padding-left: 0px;
+  &:hover {
+    padding-left: 0px;
   }
-  nav ul.nav_links li a, #header2 ul.nav_links li a {
-    font-size: 20px;
+}
+#header .grayLine, #header2 .grayLine {
+  margin-top: 5px;
+}
+
+#header .container div.logo img {
+  margin: 10% auto;
+  width: 95%;
+}
+
+#header .container div.logo .jobTagline {
+  font-size: 140%;
+  margin-top: -140px;
+  margin-left: 90px;
+}
+
+#header2 {
+  height: 185px !important;
+}
+
+footer {
+  .footer_links, p.text {
     text-align: center;
   }
-  nav ul.nav_links li.second a{
-    padding-left: 0px;
-    &:hover {
-      padding-left: 0px;
-    }
-  }
-  #header .grayLine, #header2 .grayLine {
-    margin-top: 5px;
-  }
-
-  #header .container div.logo img {
-    margin: 10% auto;
-    width: 95%;
-  }
-
-  #header .container div.logo .jobTagline {
-    font-size: 140%;
-    margin-top: -140px;
-    margin-left: 90px;
-  }
-
-  #header2 {
-    height: 185px !important;
-  }
-
-  footer {
-    .footer_links, p.text {
-      text-align: center;
-    }
-  }
+}
 
 } // media query min-width 767px
 
