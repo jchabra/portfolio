@@ -1,14 +1,14 @@
-// Web Development
-var webDev=new Array("HTML5,&nbsp;", "CSS3,&nbsp;", "SASS,&nbsp;", "Responsive Design,&nbsp;", "JavaScript,&nbsp;", "jQuery,&nbsp;", "WCAG 2.0,&nbsp;", "508 Guidelines,&nbsp;","Foundation,&nbsp;", "Bootstrap,&nbsp;", "Unsemantic");
-
-for(var i=0; i<webDev.length; i++)
-    $('#skills').find("div.webDevSkills").append('<div class="skillContainer"><div class="skillName">' + webDev[i] + '</div></div>');
-
 // Design
 var design=new Array("Axure,&nbsp;", "Sketch,&nbsp;", "InVision,&nbsp;", "Photoshop,&nbsp;", "Illustrator,&nbsp;", "InDesign,&nbsp;",  "Adobe XD,&nbsp;", "Keynote,&nbsp;", "Unity 3D");
 
 for(var i=0; i<design.length; i++)
     $('#skills').find("div.designSkills").append('<div class="skillContainer"><div class="skillName">' + design[i] + '</div></div>');
+
+// Web Development
+var webDev=new Array("HTML5,&nbsp;", "CSS3,&nbsp;", "SASS,&nbsp;", "Responsive Design,&nbsp;", "JavaScript,&nbsp;", "jQuery,&nbsp;", "WCAG 2.0,&nbsp;", "508 Guidelines,&nbsp;","Foundation,&nbsp;", "Bootstrap,&nbsp;", "Unsemantic");
+
+for(var i=0; i<webDev.length; i++)
+    $('#skills').find("div.webDevSkills").append('<div class="skillContainer"><div class="skillName">' + webDev[i] + '</div></div>');
 
 // Management
 var management=new Array("Github,&nbsp;", "FogBugz,&nbsp;", "Trello,&nbsp;", "Pivotal Tracker,&nbsp;", "Cyberduck,&nbsp;", "MS Office");
