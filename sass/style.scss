@@ -425,6 +425,12 @@ footer {
   color: $almost-white;
   height: 80px;
   padding: 20px;
+  p {
+    a {
+      color: $white;
+      text-decoration: underline;
+    }
+  }
   p.text {
     text-align: left;
   }
